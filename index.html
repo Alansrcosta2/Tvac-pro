@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TVAC Pro - IPTV</title>
-    <meta name="description" content="TVAC Pro IPTV com Tailwind e Vite" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TVAC Pro - IPTV</title>
+  <meta name="description" content="TVAC Pro IPTV com Tailwind, HLS.js e lista de canais" />
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-gray-100 text-gray-900 font-sans">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
 
-    <header class="bg-gray-800 text-white py-4 shadow-md">
-      <h1 class="text-3xl font-bold text-center">TVAC Pro</h1>
-    </header>
+  <!-- Header -->
+  <header class="bg-gray-800 text-white py-4 shadow-md">
+    <h1 class="text-3xl font-bold text-center">TVAC Pro</h1>
+  </header>
 
-    <main class="p-6 max-w-4xl mx-auto">
-      <section class="my-8 text-center">
-        <p class="text-lg mb-4">Selecione um canal para testar:</p>
-        <select id="listaCanais" class="border border-gray-400 p-2 rounded">
-          <option value="https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8">Canal Teste 1</option>
-          <opt
+  <!-- Main -->
+  <main class="p-6 max-w-5xl mx-auto">
+
+    <!-- Seção de canais -->
+    <section class="my-8">
+      <p class="text-lg mb-4 text-center font-semibold">Selecione um canal:</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <!-- Canal 1 -->
+        <div class="cursor-pointer border border-gray-300 rounded shadow hover:shadow-lg p-2 text-center"
+             data-url="https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8">
+          <img src="https://via.placeholder.com/150x80?text=Canal+1" class="mx-auto rounded mb-2" />
+          <span class="font-semibold">Canal Teste 1</span>
+        </div>
+
+        <!-- Canal 2 -->
+        <div class="cursor-pointer border border-gray-300 rounded shadow hover:shadow-lg p-2 text-center"
+             data-url="https://mnmedias.api.telequebec.tv/m3u8/29880.m3u8">
+          <img src="https://via.placeholder.com/150x80?text=Canal+2" class="mx-auto rounded mb-2" />
+          <span class="font-semibold">Canal Teste 2</span>
+        </div>
+
+        <!-- Canal 3 -->
+        <div class="cursor-pointer border border-gray-300 rounded shadow hover:shadow-lg p-2 text-center"
+             data-url="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8">
+          <img src="https://via.placeholder.com/150x80?text=Canal+3" class="mx-auto rounded mb-2" />
+          <span class="font-semibold">Canal Teste 3</span>
+        </div>
+
+        <!-- Canal 4 -->
+        <div class="cursor-pointer border border-gray-300 rounded shadow hover:shadow-lg p-2 text-center"
+             data-url="https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8">
+          <img src="https://via.placeholder.com/150x80?text=Canal+4" class="mx-auto rounded mb-2" />
+          <span class="font-semibold">Canal Teste 4</span>
 
