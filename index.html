@@ -1,37 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TVAC Pro - IPTV</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <h1>TVAC Pro - IPTV</h1>
-  </header>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TVAC Pro - IPTV</title>
+    <meta name="description" content="TVAC Pro IPTV com Tailwind e Vite" />
 
-  <main>
-    <p>Selecione um canal:</p>
-    <select id="listaCanais">
-      <option value="https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8">Canal Teste 1</option>
-      <option value="https://mnmedias.api.telequebec.tv/m3u8/29880.m3u8">Canal Teste 2</option>
-    </select>
+    <!-- Tailwind CSS já configurado via Vite -->
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900 font-sans">
 
-    <div id="playerContainer">
-      <video id="player" controls autoplay width="640" height="360"></video>
-    </div>
-  </main>
+    <header class="bg-gray-800 text-white py-4 shadow-md">
+      <h1 class="text-3xl font-bold text-center">TVAC Pro</h1>
+    </header>
 
-  <footer>
-    <p>© 2025 TVAC Pro</p>
-  </footer>
-
-  <script src="js/app.js"></script>
-</body>
-</html>
-
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+    <main class="p-6 max-w-4xl mx-auto">
+      <section class="my-8 text-center">
+        <p class="text-lg mb-4">Selecione um canal para testar:</p>
+        <select id="listaCanais" class="border border-gray-400 p-2 rounded">
+          <option value="https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8">Canal Teste 1</option>
+          <option value="https://mnmedias.api.telequebec.tv/m3u8/29880.m3u8">Canal Teste
