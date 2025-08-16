@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TVAC Pro - Streaming Platform</title>
-    <meta name="description" content="Professional streaming TV platform with live channels and on-demand content - TVAC Pro" />
-    <meta name="author" content="TVAC Pro" />
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TVAC Pro - IPTV</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>TVAC Pro - IPTV</h1>
+  </header>
 
-    <meta property="og:title" content="TVAC Pro - Streaming Platform" />
-    <meta property="og:description" content="Professional streaming TV platform with live channels and on-demand content - TVAC Pro" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <main>
+    <p>Selecione um canal:</p>
+    <select id="listaCanais">
+      <option value="https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8">Canal Teste 1</option>
+      <option value="https://mnmedias.api.telequebec.tv/m3u8/29880.m3u8">Canal Teste 2</option>
+    </select>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <div id="playerContainer">
+      <video id="player" controls autoplay width="640" height="360"></video>
+    </div>
+  </main>
 
-  <body>
+  <footer>
+    <p>© 2025 TVAC Pro</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
